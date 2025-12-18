@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flappy-pod
+  labels:
+    app: mario
+spec:
+  containers:
+  - name:  flappy-demo
+    image: bhargavbunny94/flappybird
+    ports: 
+    - containerPort: 80

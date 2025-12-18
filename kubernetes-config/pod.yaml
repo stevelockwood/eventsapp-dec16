@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stevedemo
+spec:
+  containers:
+  - name: website
+    image: coursedemos/events-api-d16:v1.0
+    ports:
+    - containerPort: 8080
